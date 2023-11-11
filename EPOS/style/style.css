@@ -1,0 +1,192 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+.hero{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(40, 40, 40, 0.3),rgba(40, 40, 40, 0.3)),url(../img/kopaonik.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav{
+    position: sticky;
+    top: 0;
+    margin-top: 0px;
+    align-items: center;
+    width: 100%;
+    /* background-color: #01253D; */
+    height: 80px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.logo{
+    color: white;
+    font-size: 28px;
+    font-style: italic;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+nav ul li a:hover{
+    color: aquamarine;
+    transition: .3s;
+}
+button{
+    background: #01253D;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: .4s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 1px solid #011c2e;
+}
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.footer{
+    width: 100%;
+    height: 300px;
+    background-color: #01253D;
+}
+.center-btn{
+    position: relative;
+    display: flex;
+    width: 260px;
+    height: 60px;
+    border: 3px solid white;
+    justify-content: center;
+    align-items: center;
+}
+.center-btn a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 28px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+.center-btn a:hover{
+    transition: .5s;
+    transform: scale(1.1);
+}
+.div1{
+    width: 100%;
+    height: 760px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+.centar h2{
+    color:white;
+    font-size: 48px;
+    text-align: center;
+    padding-bottom: 30px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+
+
+@media (max-width: 920px) {
+    .nav-menu{
+        position: fixed;
+        top: 80px;
+        right: -1000px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #011c2e;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-item{
+        margin: 16px 30%;
+    }
+    .nav{
+        background-color: #01253D;
+    }
+    nav button{
+        display: none;
+    }
+    .logo{
+        font-size: 22px;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu.active{
+        right: 0;
+    }
+    /* #check:checked ~ ul{
+        left: 0;
+    } */
+}
+@media (max-width: 500px){
+    .center-btn{
+        width: 212px;
+        height: 50px;
+    }
+    .center-btn a{
+        font-size: 20px;
+    }
+    .centar h2{
+        font-size: 32px;
+        padding-bottom: 60px;
+    }
+    .logo{
+        font-size: 36px;
+    }
+}
