@@ -13,3 +13,13 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
   navMenu.classList.remove("active");
 }))
 
+const arr = document.getElementsByClassName("nav-item");
+
+for(const element of arr){
+  element.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+  })
+}
+
+

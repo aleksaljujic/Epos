@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Prijava</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+    <link rel="stylesheet" href="style/style-form.css" />
+    <script src="form-script.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/nav-bar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3376653814.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="scripts/nav-scroll.js"></script>
+    <script src="scripts\jquery-3.7.1.min.js"></script>
+    <title>Kopaonik</title>
+  </head>
+  <body>
+    <div class="hero">
+      <header class="nav">
+              <h2 class="logo"><a href="index.html">Kopaonik</a></h2>
+              <ul class="nav-menu">
+                  <li class="nav-item"><a href="index.html" class="inactive">Početna</a></li>
+                  <li class="nav-item"><a href="#" class="inactive">Aktivnosti</a></li>
+                  <li class="nav-item"><a href="#" class="inactive">Smeštaj</a></li>
+                  <li class="nav-item"><a href="#" class="inactive">Mesta</a></li>
+              </ul>
+              <button type="button" class="nav-btn"><a href="form.html" class="nav-btn-a active">Poseti nas</a></button>
+              <div class="hamburger">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+              </div>
+      </header>
+      <div class="Kontenjer">
+        <h1 class="Naslov">Prijava</h1>
+        <form action="#" onsubmit="return validateform()">
+          <div class="glavnipodaci">
+            <div class="inputbox">
+              <input type="text"
+                      id="ime"
+                      name="Ime"
+                      placeholder="Ime"/>
+            </div>
+            <div class="inputbox">
+              <input type="text"
+                      id="prezime"
+                      name="Prezime"
+                      placeholder="Prezime"/>
+            </div>
+            <div class="inputbox">
+              <input type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Email"/>
+            </div>
+            <div class="inputbox">
+              <input type="text"
+                      id="brojtelefona"
+                      name="Brojtelefona"
+                      placeholder="Broj telefona"/>
+            </div>
+            <div class="inputbox">
+              <input type="date"
+                      id="datum"
+                      name="Datum"
+                      placeholder="Datum"required/>
+            </div>
+          </div>
+          <div class="Polbox">
+            <span class="PolT">Pol</span>
+            <div class="PolC">
+              <input type="radio" name="Pol" id="Musko">
+              <label for="male">Musko</label>
+              <input type="radio" name="Pol" id="Zensko">
+              <label for="female">Zensko</label>
+              <input type="radio" name="Pol" id="Drugo">
+              <label for="other">Drugo</label>
+            </div>
+          </div>
+          <div class="Dugme">
+            <input type="submit" value="Prijavi se">
+          </div>
+        </form>
+      </div>
+      <div class="footer">
+        <div class="footer-meni">
+            <h3 class="footer-naslov">Meni:</h3>
+            <ul class="footer-lista">
+                <li><a href="index.html"> Početna</a></li>
+                <li><a href="#"> Aktivnosti</a></li>
+                <li><a href="#"> Smeštaj</a></li>
+                <li><a href="#"> Mesta</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h3 class="footer-naslov">Kontakt:</h3>
+            <ul class="footer-lista">
+                <li><i class="fa-brands fa-whatsapp icon"></i><a href="#"> 060 010101</a></li>
+                <li><i class="fa-regular fa-envelope icon"></i><a href="#"> kopaonik@planina.rs</a></li>
+            </ul>
+        </div>
+        <div class="dr-mreze">
+            <h3 class="footer-naslov">Gde nas možete naći:</h3>
+            <ul class="footer-lista">
+                <li><i class="fa-brands fa-facebook icon"></i><a href="#"> Facebook</a></li>
+                <li><i class="fa-brands fa-instagram icon"></i><a href="#"> Instagram</a></li>
+                <li><i class="fa-brands fa-square-x-twitter icon"></i><a href="#"> Twiter</a></li>
+            </ul>
+        </div>
+        <div class="footer-pitanje">
+            <h3 class="footer-naslov">Postavite nam pitanje:</h3><br>
+            <textarea name="" placeholder="pitanje..." cols="20" rows="3" class="pitanje"></textarea><br><br>
+            <button type="submit" class="footer-btn">Pošalji</button>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+    
+  </body>
+</html>

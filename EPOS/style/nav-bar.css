@@ -1,5 +1,9 @@
 .scroll-nav{
     background-color: #01253D;
+    z-index: 10;
+}
+.scroll-nav-a{
+    color: #011c2e;
 }
 .scroll-nav-btn{
     background: white;

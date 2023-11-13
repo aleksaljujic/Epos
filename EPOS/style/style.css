@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,700;1,600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0 auto;
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
 }
 .hero{
     position: relative;
@@ -11,49 +13,43 @@
     background-image: linear-gradient(rgba(40, 40, 40, 0.3),rgba(40, 40, 40, 0.3)),url(../img/kopaonik.jpg);
     background-size: cover;
     background-position: center;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 .nav{
-    position: sticky;
-    top: 0;
-    margin-top: 0px;
-    align-items: center;
-    width: 100%;
-    /* background-color: #01253D; */
-    height: 80px;
-}
-nav{
     display: flex;
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 20px;
     padding-left: 10%;
     padding-right: 10%;
+    gap: 20px;
 }
 .logo{
     color: white;
     font-size: 28px;
     font-style: italic;
+    font-weight: bold;
     cursor: pointer;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-nav ul li{
+.nav-item{
     list-style-type: none;
     display: inline-block;
     padding: 10px 20px;
 }
-nav ul li a{
-    color: white;
+.nav-item a{
     text-decoration: none;
     font-weight: bold;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 18px;
 }
-nav ul li a:hover{
+.nav-item a:hover{
     color: aquamarine;
     transition: .3s;
 }
-button{
+.nav-btn{
     background: #01253D;
     padding: 12px 30px;
     border-radius: 30px;
@@ -61,18 +57,20 @@ button{
     font-weight: bold;
     font-size: 18px;
     transition: .4s;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border: 1px solid #011c2e;
 }
-button:hover{
+.nav-btn:hover{
     transform: scale(1.1);
     cursor: pointer;
 }
-.footer{
-    width: 100%;
-    height: 300px;
-    background-color: #01253D;
+.nav-btn-a{
+    text-decoration: none;
+    font-family: 'Montserrat',sans-serif;
+    color: white;
+    font-weight: bold;
+    
 }
+
 .center-btn{
     position: relative;
     display: flex;
@@ -83,7 +81,6 @@ button:hover{
     align-items: center;
 }
 .center-btn a{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 28px;
     text-align: center;
     text-decoration: none;
@@ -123,19 +120,77 @@ button:hover{
     padding-bottom: 30px;
     font-weight: bold;
     font-style: italic;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    width: 100%;
+    height: auto;
+    background-color: #01253D;
+    padding: 3% 10%;
+}
+.footer-lista{
+    padding: 10px 0;
+    list-style-type: none;
+}
+.footer-lista li a{
+    text-decoration: none;
+    color: whitesmoke;
+    opacity: 70%;
+    font-style: italic;
+}
+.footer-naslov{
+    color: white;
+}
+.footer-btn{
+    display: flex;
+    height: 20px;
+    background: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 88px;
+    border-radius: 30px;
+    color: #01253D;
+    font-weight: bold;
+    font-size: 14px;
+    transition: .4s;
+    border: 1px solid #011c2e;
+    align-items: center;
+    width: 225px;
+}
+.footer-btn:hover{
+    cursor: pointer;
+}
+.active{
+    color: aquamarine;
+}
+.inactive{
+    color:white;
+}
+.pitanje{
+    border: 1px solid #011c2e;
+    padding: 20px;
+    border-radius: 30px;
+    resize: none;
+    opacity: 70%;
+    width: 225px;
+}
+.icon{
+    color: whitesmoke;
+    opacity: 70%;
+    padding-right: 6px;
 }
 
-
-
-
-
-
-@media (max-width: 920px) {
+@media (max-width: 1052px) {
     .nav-menu{
         position: fixed;
         top: 80px;
-        right: -1000px;
+        right: -1200px;
         gap: 0;
         flex-direction: column;
         background-color: #011c2e;
@@ -148,8 +203,9 @@ button:hover{
     }
     .nav{
         background-color: #01253D;
+        z-index: 3;
     }
-    nav button{
+    .nav button{
         display: none;
     }
     .logo{
@@ -173,6 +229,9 @@ button:hover{
     /* #check:checked ~ ul{
         left: 0;
     } */
+    .footer{
+        flex-wrap: wrap;
+    }
 }
 @media (max-width: 500px){
     .center-btn{
@@ -183,10 +242,29 @@ button:hover{
         font-size: 20px;
     }
     .centar h2{
+        margin-top: 30px;
         font-size: 32px;
         padding-bottom: 60px;
     }
     .logo{
         font-size: 36px;
+    }
+    .footer{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-meni{
+        padding-right: 125px;
+        padding-top: 30px;
+    }
+    .contact{
+        padding-top: 30px;
+    }
+    .dr-mreze{
+        padding-top: 30px;
+    }
+    .footer-pitanje{
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 }
