@@ -13,6 +13,7 @@ body{
     background-size: cover;
     width: 100%;
     background-image: linear-gradient(rgba(40, 40, 40, 0.3),rgba(40, 40, 40, 0.3)),url(../img/kopaonik.jpg);
+    /* background-repeat: no-repeat; */
     background-position: center;
 }
 .Kontenjer{
@@ -25,8 +26,18 @@ body{
     border-width: 0.5px;
     padding: 50px;
     border-radius: 20px;
-    margin-bottom: 120px;
+    margin-bottom: 40px;
     margin-top: 60px;
+}
+.form-label{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 1px black;
+
 }
 .Naslov{
     font-size: 40px;
@@ -100,13 +111,13 @@ body{
 }
 
 .Dugme input{
+    border: 2px solid #011c2e;
     font-family: 'Montserrat',sans-serif;
     display: block;
     width: 100%;
     margin-top: 10px;
     font-size: 20px;
     padding: 10px;
-    border:none;
     border-radius: 20px;
     color:white;
     background:rgb(1, 37, 61);
@@ -140,7 +151,7 @@ body{
     }
 
     .glavnipodaci{
-        max-height: 380px;
+        /* max-height: 380px; */
         overflow: auto;
     }
 

@@ -11,6 +11,7 @@
     height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(40, 40, 40, 0.3),rgba(40, 40, 40, 0.3)),url(../img/kopaonik.jpg);
+    /* background-repeat: no-repeat; */
     background-size: cover;
     background-position: center;
     /* font-family: Arial, Helvetica, sans-serif; */
@@ -185,6 +186,45 @@
     opacity: 70%;
     padding-right: 6px;
 }
+.info{
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    color: white;
+    background-color: #011c2e;
+    padding-bottom: 50px;
+}
+.info-naslov{
+    padding: 30px 0;
+}
+.info-content{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.info-content p{
+    padding-right: 50px;
+    margin-right: 10%;
+    /* max-height: 300px; */
+}
+#info-img{
+    width: 440px;
+    /* padding-left: 50px; */
+    cursor: pointer;
+    opacity: 80%;
+    height: 300px;
+}
+.info-btn{
+    padding: 0 10px;
+    height: 300px;
+}
+.carosuel{
+    display: flex;
+    flex-wrap: nowrap;
+}
 
 @media (max-width: 1052px) {
     .nav-menu{
@@ -243,7 +283,7 @@
     }
     .centar h2{
         margin-top: 30px;
-        font-size: 32px;
+        font-size: 28px;
         padding-bottom: 60px;
     }
     .logo{
@@ -266,5 +306,35 @@
     .footer-pitanje{
         padding-top: 30px;
         padding-bottom: 30px;
+    }
+    .info-content{
+        flex-wrap: wrap;
+        font-size: 16px;
+    }
+    .info-content p{
+        justify-content: center;
+        align-items: center;
+        margin-right: -60px;
+    }
+    #info-img{
+        width: 110%;
+        margin-right: 15%;
+        margin-top: 15%;
+    }
+    .info-btn{
+        height: 300px;
+        margin-top: 56px;
+        margin-left: -30px;
+    }
+    .next{
+        margin-left: -85px;
+        z-index: 2;
+    }
+    #before{
+        margin-right: -5px;
+    }
+    .info{
+        align-items: center;
+        justify-content: center;
     }
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/nav-bar.css">
+    <link rel="stylesheet" href="style/style-activities.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -20,7 +21,7 @@
                 <h2 class="logo"><a href="index.html">Kopaonik</a></h2>
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="index.html" class="active">Početna</a></li>
-                    <li class="nav-item"><a href="#" class="inactive">Aktivnosti</a></li>
+                    <li class="nav-item"><a href="activities.html   " class="inactive">Aktivnosti</a></li>
                     <li class="nav-item"><a href="#" class="inactive">Smeštaj</a></li>
                     <li class="nav-item"><a href="#" class="inactive">Mesta</a></li>
                 </ul>
@@ -40,12 +41,37 @@
             </div>  
         </div>
     </div>
+    <div class="info">
+        <h1 class="info-naslov">Kopaonik</h1>
+        <div class="info-content">
+        <div class="info-p">
+            <p class="info-p">
+            Kopaonik (poznat i kao Srebrna planina) je najveći planinski masiv u južnoj 
+            Srbiji koji se pruža od severozapada ka jugoistoku dužinom od oko 75 km, 
+            dosežući u srednjem delu širinu od oko 40 km. Jedan njegov deo je zaštićena 
+            zona pod imenom nacionalni park Kopaonik u okviru koga postoji veći broj zaštićenih 
+            prirodnih celina, a na njemu se nalazi i najveći skijaški centar u Srbiji. Njegov 
+            najviši vrh je Pančićev vrh sa 2017 m nmv. na kome se nalazi mauzolej čuvenog srpskog 
+            prirodnjaka po kome je dobio ime, oko koga se nalazi baza vojske Srbije. Ceo masiv je 
+            dobio naziv po velikom rudnom bogatstvu koje je na njemu eksploatisano još od srednjeg veka, 
+            a na njegovom širem prostoru je smešten čitav niz kulturno-istorijskih spomenika iz perioda 
+            od XII do XV veka. Zahvaljujući razvijenom turističkom centru sa savremenim hotelima i pratećim
+             objektima, Kopaonik predstavlja jednu od najpopularnijih turističkih destinacija u Srbiji.
+        </p>
+        </div>
+        <div class="carosuel">
+            <button class="info-btn" id="before"><i class="fa-solid fa-chevron-left"></i></button>
+            <img src="img/kopaonik-brdo.jpg" alt="" id="info-img">
+            <button class="info-btn next" id="next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        </div>
+    </div>
     <div class="footer">
         <div class="footer-meni">
             <h3 class="footer-naslov">Meni:</h3>
             <ul class="footer-lista">
                 <li><a href="index.html"> Početna</a></li>
-                <li><a href="#"> Aktivnosti</a></li>
+                <li><a href="activities.html"> Aktivnosti</a></li>
                 <li><a href="#"> Smeštaj</a></li>
                 <li><a href="#"> Mesta</a></li>
             </ul>
@@ -72,5 +98,6 @@
         </div>
     </div>
     <script src="scripts/script.js"></script>
+    <script src="scripts/carosuel.js"></script>
 </body>
 </html>
