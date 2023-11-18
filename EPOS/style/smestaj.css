@@ -1,0 +1,83 @@
+body{
+  background-color:  rgba(1,37, 61, 1);
+}
+a{
+  text-decoration: none;
+}
+.lokacija:hover{
+  font-size: 18px;
+  transition: font-size 0.3s ease;
+}
+.lokacija:not(:hover) {
+  font-size: 16px; 
+  transition: font-size 0.3s ease; 
+}
+p{
+  font-family:'Montserrat',sans-serif;
+  color: white;
+}
+.hotel{
+  height: 220px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  /* border: 1px solid white; */
+  border-radius: 5px;
+  background-color:rgba(4, 22, 35,5) ;
+  
+
+}
+.obuhvatni{
+  display: flex;
+}
+.slika{
+  border-radius: 7px;
+  height: 200px ;
+  width: 200px;
+  object-fit: cover;
+  margin-right: 20px;
+  margin-left: 12px;
+  
+}
+.opis-hotela{
+  max-width: 400px;
+  min-width: 200px;
+  display: inline-block;
+
+}
+.ime{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 40px;
+}
+.opis-hotela{
+  font-style: italic;
+  font-size: 15px;
+  
+}
+.poseti-hotel{
+  margin-top: 35px;
+  padding: 10px 20px;
+  background-color:rgba(1,37, 61, 1) ;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: white;
+  font-size: 20px;
+  font-family:'Montserrat',sans-serif;
+  color: white;
+
+}
+.poseti-hotel:hover{
+  background-color:white ;
+  color:rgba(1,37, 61, 1) ;
+  cursor: pointer;
+
+}
+.poseti-hotel:active{
+  opacity: 0.7;
+}
+.dodatak{
+  margin-right: 10px;
+}
