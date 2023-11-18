@@ -16,10 +16,12 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="scripts/nav-scroll.js"></script>
     <script src="scripts\jquery-3.7.1.min.js"></script>
+    <!-- <script src="scripts/form-validation.js"></script> -->
     <title>Kopaonik</title>
   </head>
   <body>
     <div class="hero">
+      <div class="background">
       <header class="nav">
               <h2 class="logo"><a href="index.html">Kopaonik</a></h2>
               <ul class="nav-menu">
@@ -37,38 +39,52 @@
       </header>
       <div class="Kontenjer">
         <h1 class="Naslov">Prijava</h1>
-        <form action="#" onsubmit="return validateform()">
+        <form action="#" onsubmit="return validateForm()">
           <div class="glavnipodaci">
             <div class="inputbox">
-              <label for=""  class="form-label">ime:</label>
+              <label  class="form-label">ime:</label>
               <input type="text"
                       id="ime"
                       name="Ime"
                       placeholder="Ime" required/>
+              <label id="imeError" class="Error-msg"></label>
             </div>
             <div class="inputbox">
-              <label for="" class="form-label">prezime:</label>
+              <label  class="form-label">prezime:</label>
               <input type="text"
                       id="prezime"
                       name="Prezime"
                       placeholder="Prezime" required/>
+              <label id="prezimeError" class="Error-msg"></label>
             </div>
             <div class="inputbox">
-              <label for="" class="form-label">email:</label>
+              <label class="form-label">email:</label>
               <input type="email"
                       id="email"
                       name="email"
                       placeholder="Email" required/>
+              <label id="emailError"></label>
+              <label  id="emailError" class="Error-msg"></label>
             </div>
             <div class="inputbox">
-              <label for="" class="form-label">broj telefona:</label>
+              <label  class="form-label">broj telefona:</label>
               <input type="tel"
                       id="brojtelefona"
                       name="Brojtelefona"
-                      placeholder="060/555555" pattern="[0-9]{3}/[0-9]{[6-7]}" required/>
+                      placeholder="060/555555" 
+                      pattern="[0-9]{3}/[0-9]{[6-7]}" 
+                      required/>
+              <label id="telefonError" class="Error-msg"></label>
             </div>
             <div class="inputbox">
-              <label for="" class="form-label"\>datum:</label>
+              <label  class="form-label">od:</label>
+              <input type="date"
+                      id="datum"
+                      name="Datum"
+                      placeholder="Datum"required/>
+            </div>
+            <div class="inputbox">
+              <label  class="form-label">do:</label>
               <input type="date"
                       id="datum"
                       name="Datum"
@@ -79,11 +95,11 @@
             <span class="PolT Naslov">Pol</span>
             <div class="PolC">
               <input type="radio" name="Pol" id="Musko">
-              <label for="male" class="form-label">Musko</label>
+              <label  class="form-label">Musko</label>
               <input type="radio" name="Pol" id="Zensko">
-              <label for="female" class="form-label">Zensko</label>
+              <label  class="form-label">Zensko</label>
               <input type="radio" name="Pol" id="Drugo">
-              <label for="other" class="form-label">Drugo</label>
+              <label  class="form-label">Drugo</label>
             </div>
           </div>
           <div class="Dugme">
@@ -91,6 +107,7 @@
           </div>
         </form>
       </div>
+    </div>
       <div class="footer">
         <div class="footer-meni">
             <h3 class="footer-naslov">Meni:</h3>
@@ -122,7 +139,7 @@
             <button type="submit" class="footer-btn">Pošalji</button>
         </div>
     </div>
+    </div>
     <script src="scripts/script.js"></script>
-    
   </body>
 </html>

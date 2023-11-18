@@ -11,6 +11,7 @@
   .hrr{
     color: white;
   }
+  
   body{
     /* background-color: rgba(1,37, 61, 1); */
     background-color: #011c2e;
@@ -31,23 +32,35 @@
     justify-content: space-between;
    
   }
+  /* .na-slici {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+} */
   .naslov{
     font-size: 25px;
     font-weight: bold;
     margin-top: 0;
     text-align: center;
+    cursor: pointer;
+    background-color: #01253D;
   }
   .opis-aktivnosti{
     font-size: 14px;
-    
     margin-top: 0;
     margin-left: 10px;
-  
+    background: #011c2e;
   }
   
   .aktivnost{
     width: 300px;
-    height: 500px;
+    height: 545px;
     padding: 20px 0;
   }
   .slika:hover{
@@ -61,7 +74,6 @@
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  
   .slika{
     height: 300px ;
     width: 300px;
@@ -80,5 +92,13 @@
         font-size: 28px;
         padding-top:0px;
         margin-bottom: -30px;
+    }
+    .naslov{
+      width: 300px;
+      margin-top: 0;
+      margin-bottom: 160px;
+    }
+    .opis-aktivnosti{
+      margin-top: -160px;
     }
   }

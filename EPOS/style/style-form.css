@@ -130,6 +130,10 @@ body{
     color: black;
 }
 
+.Error-msg{
+    color: red;
+}
+
 @media(max-width: 600px){
     .Kontenjer{
         min-width: 280px;
@@ -157,5 +161,8 @@ body{
 
     .glavnipodaci::-webkit-scrollbar{
         width: 0;
+    }
+    .hero{
+        background-image: none;
     }
 }
