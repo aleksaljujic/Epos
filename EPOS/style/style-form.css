@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    width: 100%;
+    background-image: linear-gradient(rgba(40, 40, 40, 0.3),rgba(40, 40, 40, 0.3)),url(../img/kopaonik.jpg);
+    /* background-repeat: no-repeat; */
+    background-position: center;
+}
+.Kontenjer{
+    width: 100%;
+    max-width: 650px;
+    background: transparent;
+    backdrop-filter: blur(3px);
+    border-color: white;
+    border-style: solid;
+    border-width: 0.5px;
+    padding: 50px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+.form-label{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 1px black;
+
+}
+.Naslov{
+    font-size: 40px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    text-align: left;
+    padding-bottom: 6px;
+    margin-top: 30px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.glavnipodaci{
+    display: flex;
+    font-family: 'Montserrat',sans-serif;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.user-input-box:nth-child(2n){
+    justify-content: end;
+}
+
+.inputbox{
+    display: flex;
+    font-family: 'Montserrat',sans-serif;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+
+.inputbox input{
+    height: 40px;
+    font-family: 'Montserrat',sans-serif;
+    width: 95%;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+
+.PolT{
+    font-family: 'Montserrat',sans-serif;
+    color:white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.PolC{
+    font-family: 'Montserrat',sans-serif;
+    margin: 15px 0;
+    color: white;
+}
+
+.PolC label{
+    font-family: 'Montserrat',sans-serif;
+    padding: 0 20px 0 5px;
+}
+
+.PolC label,
+.PolC input,
+.Dugme input{
+    font-family: 'Montserrat',sans-serif;
+    cursor: pointer;
+}
+
+.Dugme{
+    margin-top: 40px;
+}
+
+.Dugme input{
+    border: 2px solid #011c2e;
+    font-family: 'Montserrat',sans-serif;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    color:white;
+    background:rgb(1, 37, 61);
+}
+
+.Dugme input:hover{
+    transition: 0.3s;
+    background: white;
+    
+    color: black;
+}
+
+.Error-msg{
+    color: red;
+}
+
+@media(max-width: 600px){
+    .Kontenjer{
+        min-width: 280px;
+    }
+
+    .inputbox{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .inputbox:nth-child(2n){
+        justify-content: space-between;
+    }
+
+    .PolC{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .glavnipodaci{
+        /* max-height: 380px; */
+        overflow: auto;
+    }
+
+    .glavnipodaci::-webkit-scrollbar{
+        width: 0;
+    }
+    .hero{
+        background-image: none;
+    }
+}
