@@ -1,4 +1,7 @@
 
+
+//JQUERY    FUNCKIJA KOJA DODAJE ODNOSNO BRIŠE VEĆ DEFINISANU KLASU
+//KAKO BI NA SKROL MENI, DUGME I LINKOVI U NJEMU PROMENILI BOJU
 $(document).ready(function () {
     $(window).scroll(function () {
         if (this.scrollY > 20) {

@@ -1,4 +1,4 @@
-
+//KLIKOM NA DRUGME POŠALJI ŠALJE IZBACUJE ALERT WINDOW SA PORUKOM KOJA JE POLATA
 function prikazPoruke(){
     let poruka = document.getElementById("pitanje");
     let pitanje = document.getElementById("pitanje").value.trim();
