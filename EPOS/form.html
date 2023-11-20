@@ -77,17 +77,33 @@
             <div class="inputbox">
               <label  class="form-label">od:</label>
               <input type="date"
-                      id="datum"
+                      id="datum1"
                       name="Datum"
                       placeholder="Datum"required/>
             </div>
             <div class="inputbox">
               <label  class="form-label">do:</label>
               <input type="date"
-                      id="datum"
+                      id="datum2"
                       name="Datum"
                       placeholder="Datum"required/>
             </div>
+          </div>
+          <div class="inputbox">
+            <label  class="form-label">izaberite hotel:</label>
+            <select id="hoteli"
+            name="hoteli"
+            required>
+              <option value="hotel-gray">Hotel Grey</option>
+              <option value="hotel-cardaci">Kraljevi Čardaci</option>
+              <option value="hotel-viceroy">Hotel Viceroy</option>
+              <option value="hotel-mujen">Hotel MujEn</option>
+              <option value="hotel-gorski">Hotel Gorski</option>
+              <option value="hotel-milmari">Hotel Milmari</option>
+              <option value="hotel-putnik">Hotel Putnik</option>
+              <option value="hotel-grand">Hotel Grand</option>
+            </select>
+            <label id="hotelError" class="Error-msg"></label>
           </div>
           <div class="Polbox">
             <span class="PolT Naslov">Pol</span>

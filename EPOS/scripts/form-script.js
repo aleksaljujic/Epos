@@ -3,7 +3,6 @@ function validateForm(){
     let Prezime = document.getElementById('prezime').value.trim();
     let Brojtelefona = document.getElementById('brojtelefona').value.trim();
     let Email = document.getElementById('email').value.trim();
-    // let Datum = document.getElementById('datum').value;
 
         const imeError = document.getElementById('imeError');
         const prezimeError = document.getElementById('prezimeError');
@@ -13,7 +12,6 @@ function validateForm(){
         var val = true;
       
     if (Ime==null || Ime=="" || !isUpper(Ime)){  
-      // alert("Niste lepo uneli ime");
       imeError.textContent="Niste uneli ispravno ime.";
       val = false;  
     }else{
@@ -54,7 +52,6 @@ function validateForm(){
  function isUpper(str){
   return /[A-Z]/.test(str);
  }
-
 
 
 

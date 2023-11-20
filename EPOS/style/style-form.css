@@ -83,6 +83,16 @@ body{
     padding: 0 10px;
 }
 
+.inputbox select{
+    height: 40px;
+    font-family: 'Montserrat',sans-serif;
+    width: 95%;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+
 .PolT{
     font-family: 'Montserrat',sans-serif;
     color:white;
