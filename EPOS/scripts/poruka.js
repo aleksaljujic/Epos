@@ -6,7 +6,7 @@ function prikazPoruke(){
         alert("Vaše pitnaje je: " + pitanje);
         poruka.value = "";
     }else{
-        alert("Pitanje mora sadržati bar 3 slova.");
+        alert("Pitanje nije lepo uneto.");
         poruka.value = "";
     }
 }
